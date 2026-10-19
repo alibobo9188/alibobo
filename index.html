@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>工作成果展示 · 区域平台 & 智慧校园产品矩阵</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 顶部栏 -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">
+        <span class="brand-mark">成</span>
+        <div class="brand-text">
+          <strong>工作成果展示</strong>
+          <small>区域教育平台 · 智慧校园产品矩阵</small>
+        </div>
+      </div>
+      <nav class="product-tabs" id="productTabs"></nav>
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="搜索模块 / 功能要点…" autocomplete="off" />
+        <span class="search-hint" id="searchHint"></span>
+      </div>
+    </div>
+  </header>
+
+  <main id="app">
+    <!-- 首页概览 -->
+    <section class="hero" id="hero">
+      <div class="hero-inner">
+        <h1>我的工作成果</h1>
+        <p class="hero-sub">区域平台产品 + 智慧校园产品的功能模块架构、功能参数与 PRD 文档总览</p>
+        <div class="hero-stats" id="heroStats"></div>
+        <p class="hero-tip">点击下方产品卡片，查看完整功能模块架构 ↓</p>
+      </div>
+    </section>
+
+    <!-- 产品选择卡片 -->
+    <section class="product-cards" id="productCards"></section>
+
+    <!-- 浏览视图 -->
+    <section class="browse" id="browse" hidden>
+      <aside class="sidebar" id="sidebar">
+        <div class="sidebar-head">
+          <span id="sidebarTitle">架构目录</span>
+          <button class="back-home" id="backHome">← 返回首页</button>
+        </div>
+        <div class="tree" id="tree"></div>
+      </aside>
+      <div class="content" id="content">
+        <div class="content-head">
+          <div>
+            <h2 id="contentTitle"></h2>
+            <p id="contentSub" class="content-sub"></p>
+          </div>
+          <div class="content-meta" id="contentMeta"></div>
+        </div>
+        <div class="module-list" id="moduleList"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>工作成果展示 · 内部分享</span>
+    <span id="footerCount"></span>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
